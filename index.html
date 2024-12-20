@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Юный Техник</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            Юный техник
+        </div>
+        <div class="menu">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="#goods" class="menu-link">Товары</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#reviews" class="menu-link">Отзывы</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#help" class="menu-link">Помощь</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#contacts" class="menu-link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div class="overlay-content">
+              <a href="#goods">Товары</a>
+              <a href="#reviews">Отзывы</a>
+              <a href="#help">Помощь</a>
+              <a href="#contacts">Контакты</a>
+            </div>
+          </div>
+
+          <span class="burger-button" style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+        
+
+        <div class="offer">
+            <a href="#goods">
+                <button class="button">
+                    Посмотреть предложения
+                </button>
+            </a>
+        </div>
+    </header>
+    <section class="main-image">
+        <img class="main-image__picture" src="images/main-image.jpg" alt="Главная фотография магазина">
+    </section>
+    <section class="goods" id="goods">
+        <h1 class="main-title">
+            Лучшие товары Юного Техника
+        </h1>
+        <p class="main-text text">
+            Широкий выбор современной техники
+        </p>
+        <div class="goods-cards">
+            <div class="good-card">
+                <img class="card-image" src="images/first-card.jpg" alt="Смартфон XY-300">
+                <h3 class="card-title">Смартфон XY-300</h3>
+                <p class="card-text">Безграничные возможности</p>
+                <p class="card-text">в ваших руках</p>
+                <div class="cost">
+                    <p class="current-cost">
+                        18990
+                    </p>
+                    <p class="old-cost">
+                        23990
+                    </p>
+                </div>
+                <button class="card-button">Заказать</button>
+            </div>
+            <div class="good-card">
+                <img class="card-image" src="images/second-card.jpg" alt="Планшет Altro Pro">
+                <h3 class="card-title">Планшет Altro Pro</h3>
+                <p class="card-text">Настоящее мощное устройство</p>
+                <p class="card-text">для работы и развлечений</p>
+                <div class="cost">
+                    <p class="current-cost">
+                        29990
+                    </p>
+                    <p class="old-cost">
+                        39990
+                    </p>
+                </div> 
+                <button class="card-button">Заказать</button>
+            </div>
+            <div class="good-card">
+                <img class="card-image" src="images/third-card.jpg" alt="Идеальный ноутбук">
+                <h3 class="card-title">Идеальный ноутбук</h3>
+                <p class="card-text">Мощность и стиль</p>
+                <p class="card-text">в каждой детали</p>
+                <div class="cost">
+                    <p class="current-cost">
+                        98990
+                    </p>
+                    <p class="old-cost">
+                        103990
+                    </p>
+                </div>
+                <button class="card-button">Заказать</button>
+            </div>
+        </div>
+    </section>
+    <section class="reviews" id="reviews">
+        <h2 class="review-title">
+            Отзывы покупателей
+        </h2>
+
+        <div class="slider-container">
+            <div class="slider">
+                <div class="review-card">
+                    <span class="circle-image">
+                        <img class="review-card__image" src="images/buyer1.png" alt="Фото покупателя">
+                    </span>
+                    <p class="buyer-name">
+                        Александра Лаптева
+                    </p>
+                    <p class="buyer-profession">
+                        Секретарь
+                    </p>
+                    <p class="review-text text">
+                        “Я просто в восторге от своего нового телефона XY-300! Этот аппарат сочетает в себе стиль, функциональность и высокотехнологичные возможности, что делает его идеальным спутником.
+        Дизайн телефона просто завораживает: тонкий и легкий корпус, изогнутый экран и стильная цветовая гамма – все это создает великолепный внешний вид. Аккумулятор держит заряд на протяжении всего дня, что особенно важно для активной девушки, всегда в движении.”
+                    </p>
+                </div>
+
+                <div class="review-card">
+                    <span class="circle-image">
+                        <img class="review-card__image" src="images/buyer1.png" alt="Фото покупателя">
+                    </span>
+                    <p class="buyer-name">
+                        Валера Длинный
+                    </p>
+                    <p class="buyer-profession">
+                        Бомж
+                    </p>
+                    <p class="review-text text">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ”
+                    </p>
+                </div>
+
+                <div class="review-card">
+                    <span class="circle-image">
+                        <img class="review-card__image" src="images/buyer1.png" alt="Фото покупателя">
+                    </span>
+                    <p class="buyer-name">
+                        Вова Черепаха
+                    </p>
+                    <p class="buyer-profession">
+                        Шлюссар
+                    </p>
+                    <p class="review-text text">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ”
+                    </p>
+                </div>
+            </div>
+            <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+            <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+          </div>
+
+        
+    </section>
+    <section class="questions" id="help">
+        <h2 class="questions-title">
+            Остались вопросы?
+        </h2>
+        <p class="questions-text text">
+            Мы готовы вам помочь
+        </p>
+        <form class="form" method="POST">
+            <input type="text" placeholder="Ваше имя" class="input">
+            <input type="email" placeholder="Ваш email" class="input">
+            <input type="text" placeholder="Напишите, какие сложности возникли" class="input">
+            <input type="submit" value="Отправить" class="form-button">
+        </form>
+    </section>
+    <section class="contacts" id="contacts">
+        <h2 class="contacts-title">
+            Контакты
+        </h2>
+        <p class="contacts-text text">
+            Напишите, какие сложности возникли
+        </p>
+        <div class="map">
+            <div class="contact-card">
+                <h3 class="contact-card__title">
+                    Контакты
+                </h3>
+                <p class="contact-card__phone">
+                    +X-XXX-XXX-XX-XX
+                </p>
+                <a class="contact-card__email" href="#">info@luxetehnika.ru</a>
+                <p class="contact-card__addres-first">
+                    Город Москва, метро "Китай город",
+                </p>
+                <p class="contact-card__addres-second">
+                    улица Яузская, дом 11/6к5
+                </p>
+            </div>
+            <div class="yandex" style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.by/maps/213/moscow/house/yauzskaya_ulitsa_11_6k5/Z04YcAJiTEMFQFtvfXt1dHRnbA==/?ll=37.652561%2C55.745848&utm_medium=mapframe&utm_source=maps&z=16.49" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яузская улица, 11/6к5 — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/?ll=37.652561%2C55.745848&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcwODIyNRI-0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCv0YPQt9GB0LrQsNGPINGD0LvQuNGG0LAsIDExLzbQujUiCg05nBZCFcD7XkI%2C&z=16.49" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="logo">
+            Юный Техник
+        </div>
+        <div class="footer-manu">
+            <ul class="footer-menu__list">
+                <li class="footer-menu__item">
+                    <a class="footer-menu__link" href="#goods">Товары</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a class="footer-menu__link" href="#reviews">Отзывы</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a class="footer-menu__link" href="#help">Помощь</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a class="footer-menu__link" href="#contacts">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-contacts">
+            <p class="phone">+7 (880) 555-55-55</p>
+            <a href="#" class="footer-email">youngtechnic@yt.ru</a>
+        </div>
+        <div class="footer-icons">
+            <a href="https://telegram.org"><img src="images/telegram.svg" alt="Телеграмм"></a>
+            <a href="https://mail.ru"><img src="images/email.svg" alt="email"></a>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
